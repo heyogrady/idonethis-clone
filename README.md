@@ -7,13 +7,13 @@ rake setup
 bundle exec rails server
 ```
 
-#### Replace Wheel with your project name
+#### Replace Notch with your project name
 
 Let's say that the project name is `Pump`. Execute the command below to
-replace all occurrences of `Wheel` with `Pump`.
+replace all occurrences of `Notch` with `Pump`.
 
 ```
- perl -e "s/Wheel/Pump/g;" -pi $(find . -type f)
+ perl -e "s/Notch/Pump/g;" -pi $(find . -type f)
 ```
 
 #### Instructions

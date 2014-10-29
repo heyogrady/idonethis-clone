@@ -15,7 +15,7 @@ common:
     bucket_name: <%= ENV['AWS_S3_BUCKET_NAME'] %>
 
   mailer:
-    default_from_email: "'Wheel' <notifications@wheel.com>"
+    default_from_email: "'Notch' <notifications@wheel.com>"
     delivery_method: test
     smtp_settings:
       user_name: <%= ENV['MANDRILLAPP_USERNAME'] %>

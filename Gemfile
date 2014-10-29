@@ -77,4 +77,7 @@ group :test do
 
   # for test coverage report
   gem 'simplecov', require: false
+
+  gem "codeclimate-test-reporter", require: nil
+  
 end

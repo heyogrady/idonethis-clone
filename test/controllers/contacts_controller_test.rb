@@ -6,6 +6,7 @@ class ContactsControllerTest < ActionController::TestCase
     request.env["HTTP_REFERER"] = "http://test.com"
   end
 
+
   def test_create_success
     contact_param = { contact: { title: 'contact title',
                                  body: 'some message',

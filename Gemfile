@@ -1,14 +1,15 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.2.0'
 
-gem 'rails', '4.1.4'
+gem 'rails', '4.1.8'
 gem 'arel'
 gem 'jquery-rails'
-gem 'sprockets-rails', github: 'rails/sprockets-rails'
-gem 'sass-rails',   github: 'rails/sass-rails'
-gem 'coffee-rails', github: 'rails/coffee-rails'
+gem 'sass-rails', '~> 5.0.0.beta1'
+gem 'coffee-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.0.3'
+
+gem 'inherited_resources', github: 'josevalim/inherited_resources', branch: 'rails-4-2'
 
 # database
 gem 'pg'
@@ -49,22 +50,36 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 # for handling file uploads
 gem 'carrierwave'
 
-# for logging to work in heroku
-gem 'rails_12factor'
-
 # for email validation
 gem 'email_validator'
 
 # For variants support
 gem 'browser'
 
+gem 'responders'
+
 group :development do
+
+  gem 'web-console', '~> 2.0'
 
   # mutes assets pipeline log messages
   gem 'quiet_assets'
 
   # speeds up development by keeping your application running in the background
   gem 'spring'
+
+  # automatically run tests
+  gem 'guard-minitest'
+
+  # evaluate against style guide
+  gem 'rubocop'
+
+  # use rubocop with guard
+  gem 'guard-rubocop'
+
+  # reload browser when view files change
+  gem 'guard-livereload', require: false
+
 end
 
 group :test do
@@ -78,6 +93,26 @@ group :test do
   # for test coverage report
   gem 'simplecov', require: false
 
-  gem "codeclimate-test-reporter", require: nil
+  # send test coverage report to Code Climate
+  gem 'codeclimate-test-reporter', require: nil
+
+  # for Guard
+  gem 'ruby-prof'
   
+end
+
+group :development, :test do
+
+  # recieve notifications from guard
+  gem 'ruby_gntp'
+
+  gem 'pry'
+
+end
+
+group :staging, :production do
+
+  # better logging
+  gem 'rails_12factor'
+
 end

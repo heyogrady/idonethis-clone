@@ -1,6 +1,28 @@
 <ul class="nav navbar-nav navbar-right">
-
+  
   <% if user_signed_in? %>
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Find dones ...">
+      </div>
+    </form>
+    <li>
+      <a href="#">
+        <i class="fa fa-question-circle"></i>
+        Help
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-bolt"></i>
+        Apps
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-inbox"></i>
+      </a>
+    </li>
     <%= render 'shared/user_is_signed_in' %>
   <% else %>
     <%= nav_link 'Sign in', new_session_path(:user) %>

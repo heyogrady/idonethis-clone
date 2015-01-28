@@ -1,0 +1,491 @@
+<header>
+  <h1>my personal calendar</h1>
+</header>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">Dones</a></li>
+  <li role="presentation"><a href="#">Tags</a></li>
+  <li role="presentation"><a href="#">Settings</a></li>
+</ul><!-- /.nav nav-tabs -->
+
+<div id="dones-container">
+  <div class="col-md-8 col-md-push-4">
+    <div class="row">
+      <div id="feed" class="col-md-12">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="alert alert-info lead">
+              Record what you got done so far by entering it below.
+              For example, "set up my Notch calendar"
+            </div><!-- /.alert alert-info lead -->
+          </div><!-- /.col-md-9 -->
+        </div><!-- /.row -->
+
+        <div class="date-container" data-date="2015-01-26">
+          <h2 class="dotted date-header">Mon Jan 26 2015</h2>
+          <div class="user-container" data-user="heyogrady">
+            <div class="row">
+              <div class="col-xs-2 col-sm-1">
+                <h4>
+                  <a href="#">
+                    <img class="avatar_50 img-responsive" src="https://secure.gravatar.com/avatar/e44dabb1c4ff2fb8e68e0dc0706509f6?s=50&amp;d=monsterid">
+                  </a>
+                </h4>
+              </div><!-- /.col-xs-2 col-sm-1 -->
+              <div class="col-xs-10 col-sm-11">
+                <h4 class="dd_owner">
+                  <a href="#">Patrick O'Grady</a>
+                  <br>
+                  <small class="dd_owner_username">
+                    <strong>@heyogrady</strong>
+                  </small>
+                </h4><!-- /.dd_owner -->
+              </div><!-- /.col-xs-10 col-sm-11 -->
+            </div><!-- /.row -->
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="donelist list-unstyled">
+                </ul>
+                <ul class="donelist list-unstyled">
+                  <li class="none done-item  goal-completed" done-id="17667915">
+                    <div class="text row">
+                      <div class="col-xs-2 col-sm-1 text-right">
+                        <a class="done-checkbox" href="#">
+                          <i class="fa fa-check"></i>
+                        </a>
+                      </div>
+                      <div class="done-text done-container col-xs-10 col-sm-8">
+                        <p>
+                          <span class="inline-text text-break-word">
+                            watched Revenge on ABC
+                          </span>
+                          <span class="feedback-actions text-muted">
+                            <a href="#" class="text-muted">
+                              <i class="fa fa-comment-o comment-button small-comment"></i>
+                            </a>
+                            <a href="#" class="text-muted">
+                              <i class="fa fa-thumbs-o-up like-button"></i>
+                            </a>
+                          </span>
+                        </p>
+                        <div class="done_payload" style="display:none;"></div>
+                      </div>
+                      <div class="action_panel col-md-2 hidden-xs hidden-sm">
+                        <a href="#" class="text-muted">
+                          <i class="fa fa-edit edit-button" title="edit"></i>
+                        </a>
+                        <a href="#" class="text-muted">
+                          <i class="fa fa-trash-o delete-button" title="trash"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="edit_container row hide">
+                      <div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2">
+                        <div class="edit_form">
+                          <textarea class="form-control textedit_top textedit_text done-textarea inline-done-textarea" placeholder="" style="overflow: hidden; word-wrap: break-word; height: 40px;"></textarea>
+                        </div>
+                        <div class="edit_toolbar">
+                          <div style="height:5px"></div>
+                          <div class="row">
+                            <div class="col-xs-8">
+                              <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default btn-sm done_toolbar_done active">
+                                  <i class="fa fa-check"></i>
+                                  Done
+                                </button>
+                                <button type="button" class="btn btn-default btn-sm done_toolbar_goal ">
+                                  <i class="fa fa-check"></i>
+                                  Goal
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                              <a class="btn btn-default btn-sm done_toolbar_cancel" href="#" role="button">
+                                Cancel
+                              </a>
+                              <a class="btn btn-primary btn-sm done_toolbar_save" href="#" role="button">
+                                Save
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <br>
+                    </div>
+                  </li>
+                  <li class="none done-item  goal-completed" done-id="17667918">
+                    <div class="text row">
+                      <div class="col-xs-2 col-sm-1 text-right">
+                        <a class="done-checkbox" href="#">
+                          <i class="fa fa-check"></i>
+                        </a>
+                      </div>
+                      <div class="done-text done-container col-xs-10 col-sm-8">
+                        <p>
+                          <span class="inline-text text-break-word">
+                            picked up my prescription
+                          </span>
+                          <span class="feedback-actions text-muted">
+                            <a href="#" class="text-muted">
+                              <i class="fa fa-comment-o comment-button small-comment"></i>
+                            </a>
+                            <a href="#" class="text-muted">
+                              <i class="fa fa-thumbs-o-up like-button"></i>
+                            </a>
+                          </span>
+                        </p>
+                        <div class="done_payload" style="display:none;"></div>
+                      </div>
+                      <div class="action_panel col-md-2 hidden-xs hidden-sm">
+                        <a href="#" class="text-muted">
+                          <i class="fa fa-edit edit-button" title="edit"></i>
+                        </a>
+                        <a href="#" class="text-muted">
+                          <i class="fa fa-trash-o delete-button" title="trash"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="edit_container row hide">
+                      <div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2">
+                        <div class="edit_form">
+                          <textarea class="form-control textedit_top textedit_text done-textarea inline-done-textarea" placeholder="" style="overflow: hidden; word-wrap: break-word; height: 40px;"></textarea>
+                        </div>
+                        <div class="edit_toolbar">
+                          <div style="height:5px"></div>
+                          <div class="row">
+                            <div class="col-xs-8">
+                              <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default btn-sm done_toolbar_done active">
+                                  <i class="fa fa-check"></i>&nbsp;Done
+                                </button>
+                                <button type="button" class="btn btn-default btn-sm done_toolbar_goal ">
+                                  <span class="fa fa-check"></span>&nbsp;Goal
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                              <a class="btn btn-default btn-sm done_toolbar_cancel" href="#" role="button">Cancel</a>
+                              <a class="btn btn-primary btn-sm done_toolbar_save" href="#" role="button">Save</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <br>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row widget-add-done">
+              <div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2">
+                <div class="add_textarea">
+                  <div class="add_done_container">
+                    <textarea class="form-control short hint done-textarea inline-done-textarea" placeholder="What'd you get done today?" style="overflow: hidden; word-wrap: break-word; height: 40px;"></textarea>
+                  </div>
+                  <div class="edit_toolbar">
+                    <div style="height:5px"></div>
+                    <div class="row">
+                      <div class="col-xs-8">
+                        <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                            <i class="fa fa-check"></i>
+                            Done
+                          </label>
+                          <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Goal
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xs-4 text-right">
+                        <a class="btn btn-primary btn-sm done_toolbar_save" href="#" role="button">Post</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-container" data-user="gregbphelps">
+            <div class="row">
+              <div class="col-xs-2 col-sm-1">
+                <h4>
+                  <a href="#">
+                    <img class="avatar_50 img-responsive" src="https://secure.gravatar.com/avatar/b953a9e06287f783ce37a3d9dabec74e?s=50&amp;d=monsterid">
+                  </a>
+                </h4>
+              </div><!-- /.col-xs-2 col-sm-1 -->
+              <div class="col-xs-10 col-sm-11">
+                <h4 class="dd_owner">
+                  <a href="#">Greg Phelps</a>
+                  <br>
+                  <small class="dd_owner_username">
+                    <strong>@gregbphelps</strong>
+                  </small>
+                </h4><!-- /.dd_owner -->
+              </div><!-- /.col-xs-10 col-sm-11 -->
+            </div><!-- /.row -->
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="donelist list-unstyled">
+                </ul>
+                <ul class="donelist list-unstyled">
+                  <li class="none done-item  goal-completed" done-id="17667915">
+                    <div class="text row">
+                      <div class="col-xs-2 col-sm-1 text-right">
+                        <a class="done-checkbox" href="#">
+                          <i class="fa fa-check"></i>
+                        </a>
+                      </div>
+                      <div class="done-text done-container col-xs-10 col-sm-8">
+                        <p>
+                          <span class="inline-text text-break-word">
+                            watched Revenge on ABC
+                          </span>
+                          <span class="feedback-actions text-muted">
+                            <a href="#" class="text-muted">
+                              <i class="fa fa-comment-o comment-button small-comment"></i>
+                            </a>
+                            <a href="#" class="text-muted">
+                              <i class="fa fa-thumbs-o-up like-button"></i>
+                            </a>
+                          </span>
+                        </p>
+                        <div class="done_payload" style="display:none;"></div>
+                      </div>
+                    </div>
+                    <div class="edit_container row hide">
+                      <div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2">
+                        <div class="edit_form">
+                          <textarea class="form-control textedit_top textedit_text done-textarea inline-done-textarea" placeholder="" style="overflow: hidden; word-wrap: break-word; height: 40px;"></textarea>
+                        </div>
+                        <div class="edit_toolbar">
+                          <div style="height:5px"></div>
+                          <div class="row">
+                            <div class="col-xs-8">
+                              <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default btn-sm done_toolbar_done active">
+                                  <i class="fa fa-check"></i>
+                                  Done
+                                </button>
+                                <button type="button" class="btn btn-default btn-sm done_toolbar_goal ">
+                                  <i class="fa fa-check"></i>
+                                  Goal
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                              <a class="btn btn-default btn-sm done_toolbar_cancel" href="#" role="button">
+                                Cancel
+                              </a>
+                              <a class="btn btn-primary btn-sm done_toolbar_save" href="#" role="button">
+                                Save
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <br>
+                    </div>
+                  </li>
+                  <li class="none done-item  goal-completed" done-id="17667918">
+                    <div class="text row">
+                      <div class="col-xs-2 col-sm-1 text-right">
+                        <a class="done-checkbox" href="#">
+                          <i class="fa fa-check"></i>
+                        </a>
+                      </div>
+                      <div class="done-text done-container col-xs-10 col-sm-8">
+                        <p>
+                          <span class="inline-text text-break-word">
+                            picked up my prescription
+                          </span>
+                          <span class="feedback-actions text-muted">
+                            <a href="#" class="text-muted">
+                              <i class="fa fa-comment-o comment-button small-comment"></i>
+                            </a>
+                            <a href="#" class="text-muted">
+                              <i class="fa fa-thumbs-o-up like-button"></i>
+                            </a>
+                          </span>
+                        </p>
+                        <div class="done_payload" style="display:none;"></div>
+                      </div>
+                    </div>
+                    <div class="edit_container row hide">
+                      <div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2">
+                        <div class="edit_form">
+                          <textarea class="form-control textedit_top textedit_text done-textarea inline-done-textarea" placeholder="" style="overflow: hidden; word-wrap: break-word; height: 40px;"></textarea>
+                        </div>
+                        <div class="edit_toolbar">
+                          <div style="height:5px"></div>
+                          <div class="row">
+                            <div class="col-xs-8">
+                              <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default btn-sm done_toolbar_done active">
+                                  <i class="fa fa-check"></i>&nbsp;Done
+                                </button>
+                                <button type="button" class="btn btn-default btn-sm done_toolbar_goal ">
+                                  <span class="fa fa-check"></span>&nbsp;Goal
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                              <a class="btn btn-default btn-sm done_toolbar_cancel" href="#" role="button">Cancel</a>
+                              <a class="btn btn-primary btn-sm done_toolbar_save" href="#" role="button">Save</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <br>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="date-container" data-date="2015-01-25">
+          <h2 class="dotted date-header">Sun Jan 25 2015</h2>
+          <div class="user-container" data-user="heyogrady">
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="donelist list-unstyled">
+                </ul>
+              </div>
+            </div>
+            <div class="row widget-add-done">
+              <div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2">
+                <div class="add_textarea">
+                  <div class="add_done_container">
+                    <textarea class="form-control short hint done-textarea inline-done-textarea" placeholder="What'd you get done on Sunday, January 25th?" style="overflow: hidden; word-wrap: break-word; height: 40px;"></textarea>
+                  </div>
+                  <div class="edit_toolbar">
+                    <div style="height:5px"></div>
+                    <div class="row">
+                      <div class="col-xs-8">
+                        <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                            <i class="fa fa-check"></i>
+                            Done
+                          </label>
+                          <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Goal
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xs-4 text-right">
+                        <a class="btn btn-primary btn-sm done_toolbar_save" href="#" role="button">Post</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="date-container" data-date="2015-01-24">
+          <h2 class="dotted date-header">Sat Jan 24 2015</h2>
+          <div class="user-container" data-user="heyogrady">
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="donelist list-unstyled">
+                </ul>
+              </div>
+            </div>
+            <div class="row widget-add-done">
+              <div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2">
+                <div class="add_textarea">
+                  <div class="add_done_container">
+                    <textarea class="form-control short hint done-textarea inline-done-textarea" placeholder="What'd you get done on Saturday, January 24th?" style="overflow: hidden; word-wrap: break-word; height: 40px;"></textarea>
+                  </div>
+                  <div class="edit_toolbar">
+                    <div style="height:5px"></div>
+                    <div class="row">
+                      <div class="col-xs-8">
+                        <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                            <i class="fa fa-check"></i>
+                            Done
+                          </label>
+                          <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Goal
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xs-4 text-right">
+                        <a class="btn btn-primary btn-sm done_toolbar_save" href="#" role="button">Post</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.col-md-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.col-md-8 col-md-push-4 -->
+  <div class="col-md-3 col-md-pull-8">
+    <div class="row" id="calendar">
+      <div class="col-md-12">
+        <h2>Calendar</h2>
+        <div id="datepicker"></div><!-- /#datepicker -->
+      </div><!-- /.col-md-12 -->
+    </div><!-- /#calendar.row -->
+    <div class="row" id="report">
+      <div class="col-md-12">
+        <h2>Report</h2>
+        <div class="dropdown">
+          <a href="#" class="export-link" data-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-external-link-square"></i>
+            Export Jan 24, 2015 - Jan 26, 2015
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/api/v3/team/my-personal-calendar-g6md/dones/export/?start=2015-01-24&amp;end=2015-01-26&amp;type=pdf&amp;users=">
+                <i class="fa fa-file-pdf-o"></i> PDF
+              </a>
+            </li>
+            <li>
+              <a href="" data-toggle="modal" data-target="#text-export">
+                <i class="fa fa-file-text-o"></i> Plain Text
+              </a>
+            </li>
+            <li>
+              <a href="" data-toggle="modal" data-target="#email-export">
+                <i class="fa fa-envelope-o"></i> Email
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div><!-- /.col-md-12 -->
+    </div><!-- /#calendar.row -->
+    <div class="row" id="recent-tags">
+      <div class="col-md-12">
+        <h2>Recent Tags</h2>
+        <div>
+          <div class="tagitem">
+            <a href="#" class="tag_name tag_link" title="" data-original-title="<strong>#blessed</strong><p class='text-center'><em>(no tag description)</em></p>">#blessed</a>
+          </div>
+          <div class="tagitem">
+            <a href="#" class="tag_name tag_link" title="" data-original-title="<strong>#movie</strong><p class='text-center'><em>(no tag description)</em></p>">#movie</a>
+          </div>
+        </div>
+      </div><!-- /.col-md-12 -->
+    </div><!-- /#calendar.row -->
+  </div><!-- /.col-md-3 col-md-pull-8 -->
+</div><!-- /#dones-container -->
+
+<% content_for :extra_js do %>
+  $("#datepicker").datepicker();
+<% end %>

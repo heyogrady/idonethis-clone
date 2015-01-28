@@ -35,7 +35,16 @@ Notch::Application.routes.draw do
 
   end
 
-  get 'pages/about'
+  get "pages/about"
+  get "pages/my_personal_calendar"
+  get "pages/my_personal_calendar_members"
+  get "pages/my_personal_calendar_tags"
+  get "pages/home"
+  get "pages/settings"
+  get "pages/create_team_personal"
+  get "pages/onboarding_1"
+  get "pages/onboarding_create_team"
+  get "pages/onboarding_invite_members"
 
   authenticated :user do
     get '/pages' => 'pages#index', as: :pages

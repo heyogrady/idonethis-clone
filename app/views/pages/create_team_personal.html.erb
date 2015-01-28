@@ -1,0 +1,237 @@
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <h1>Create Your Notch</h1>
+    <p class="lead">
+      Your account is set up! Now let's get your team up and running.
+    </p><!-- /.lead -->
+    <p>Do you want to create a Team or Personal Notch?</p>
+    <a href="#team-form-container" id="team-form-toggle" class="btn btn-primary" data-toggle="tab">Team</a>
+    <a href="#personal-form-container" id="personal-form-toggle" class="btn btn-primary active" data-toggle="tab">Personal</a>
+    <div class="help-block">
+      Team is for teams at work to track and share what they get done every day.<br>
+      Personal is for people who want to keep a private, individual log.
+    </div><!-- /.help-block -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="personal-form-container">
+        <form id="personal-form">
+          <div class="form-group">
+            <label for="id_name">Name</label>
+            <input type="text" class="form-control" id="id_name" name="name">
+            <div class="help-block">
+              Your calendar's name
+            </div><!-- /.help-block -->
+          </div><!-- /.form-group -->
+          <div class="form-group">
+            <label for="id_question">Question</label>
+            <input type="text" class="form-control" id="id_question" name="question">
+            <div class="help-block">
+              This is the question that we'll ask you to answer every day.
+            </div><!-- /.help-block -->
+          </div><!-- /.form-group -->
+          <div id="personal-form-frequencies">
+            <div class="form-group">
+              <label>We'll email you reminders</label>
+              at
+              <select name="reminder_time" id="id_reminder_time" class="email_hours">
+                <option value="[8]">8am</option>
+                <option value="[9]">9am</option>
+                <option value="[10]">10am</option>
+                <option value="[11]">11am</option>
+                <option value="[12]">noon</option>
+                <option value="[13]">1pm</option>
+                <option value="[14]">2pm</option>
+                <option value="[15]">3pm</option>
+                <option value="[16]">4pm</option>
+                <option value="[17]">5pm</option>
+                <option value="[18]" selected="selected">6pm</option>
+                <option value="[19]">7pm</option>
+                <option value="[20]">8pm</option>
+                <option value="[21]">9pm</option>
+                <option value="[22]">10pm</option>
+                <option value="[23]">11pm</option>
+              </select>
+              on
+              <br>
+              <div class="checkbox">
+                <label for="personal-form-reminder-0" class="checkbox-inline">
+                  <input type="checkbox" id="personal-form-reminder-0" />
+                  Mon
+                </label>
+                <label for="personal-form-reminder-1" class="checkbox-inline">
+                  <input type="checkbox" id="personal-form-reminder-1" />
+                  Tue
+                </label>
+                <label for="personal-form-reminder-2" class="checkbox-inline">
+                  <input type="checkbox" id="personal-form-reminder-2" />
+                  Wed
+                </label>
+                <label for="personal-form-reminder-3" class="checkbox-inline">
+                  <input type="checkbox" id="personal-form-reminder-3" />
+                  Thu
+                </label>
+                <label for="personal-form-reminder-4" class="checkbox-inline">
+                  <input type="checkbox" id="personal-form-reminder-4" />
+                  Fri
+                </label>
+                <label for="personal-form-reminder-5" class="checkbox-inline">
+                  <input type="checkbox" id="personal-form-reminder-5" />
+                  Sat
+                </label>
+                <label for="personal-form-reminder-6" class="checkbox-inline">
+                  <input type="checkbox" id="personal-form-reminder-6" />
+                  Sun
+                </label>
+              </div><!-- /.checkbox -->
+              <div class="help-block">
+                We'll remind your team to share what they got done on these days
+                and at this time. The reminder saves your team from having to
+                remember to update Notch.
+              </div><!-- /.help-block -->
+            </div><!-- /.form-group -->
+            <input type="submit" class="btn btn-primary disable-on-submit" value="Next ➞" />
+          </div><!-- /#personal-form-frequencies -->
+        </form><!-- /#personal-form -->
+      </div><!-- /#personal-form-container -->
+      <div class="tab-pane" id="team-form-container">
+        <form id="team-form">
+          <div class="form-group">
+            <label for="id_team_name">Team Name</label>
+            <input type="text" class="form-control" id="id_team_name" name="team_name">
+            <div class="help-block">
+              Your team name will appear in menus and headings.
+            </div><!-- /.help-block -->
+          </div><!-- /.form-group -->
+          <div class="form-group">
+            <label for="id_team_question">Question</label>
+            <input type="text" class="form-control" id="id_team_question" name="team_question">
+            <div class="help-block">
+              This is the question that we'll ask your team to answer.
+            </div><!-- /.help-block -->
+          </div><!-- /.form-group -->
+          <div id="team-form-frequencies">
+            <div class="form-group">
+              <label>We'll email your team reminders</label>
+              at
+              <select name="reminder_time" id="id_reminder_time" class="email_hours">
+                <option value="[8]">8am</option>
+                <option value="[9]">9am</option>
+                <option value="[10]">10am</option>
+                <option value="[11]">11am</option>
+                <option value="[12]">noon</option>
+                <option value="[13]">1pm</option>
+                <option value="[14]">2pm</option>
+                <option value="[15]">3pm</option>
+                <option value="[16]">4pm</option>
+                <option value="[17]">5pm</option>
+                <option value="[18]" selected="selected">6pm</option>
+                <option value="[19]">7pm</option>
+                <option value="[20]">8pm</option>
+                <option value="[21]">9pm</option>
+                <option value="[22]">10pm</option>
+                <option value="[23]">11pm</option>
+              </select>
+              on
+              <br>
+              <div class="checkbox">
+                <label for="team-form-reminder-0" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-reminder-0" />
+                  Mon
+                </label>
+                <label for="team-form-reminder-1" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-reminder-1" />
+                  Tue
+                </label>
+                <label for="team-form-reminder-2" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-reminder-2" />
+                  Wed
+                </label>
+                <label for="team-form-reminder-3" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-reminder-3" />
+                  Thu
+                </label>
+                <label for="team-form-reminder-4" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-reminder-4" />
+                  Fri
+                </label>
+                <label for="team-form-reminder-5" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-reminder-5" />
+                  Sat
+                </label>
+                <label for="team-form-reminder-6" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-reminder-6" />
+                  Sun
+                </label>
+              </div><!-- /.checkbox -->
+              <div class="help-block">
+                We'll remind your team to share what they got done on these days
+                and at this time. The reminder saves your team from having to
+                remember to update Notch.
+              </div><!-- /.help-block -->
+            </div><!-- /.form-group -->
+            <div class="form-group">
+              <label>We'll email your team digests</label>
+              at
+              <select name="digest_time" id="id_digest_time" class="email_hours">
+                <option value="[8]">8am</option>
+                <option value="[9]">9am</option>
+                <option value="[10]">10am</option>
+                <option value="[11]">11am</option>
+                <option value="[12]">noon</option>
+                <option value="[13]">1pm</option>
+                <option value="[14]">2pm</option>
+                <option value="[15]">3pm</option>
+                <option value="[16]">4pm</option>
+                <option value="[17]">5pm</option>
+                <option value="[18]" selected="selected">6pm</option>
+                <option value="[19]">7pm</option>
+                <option value="[20]">8pm</option>
+                <option value="[21]">9pm</option>
+                <option value="[22]">10pm</option>
+                <option value="[23]">11pm</option>
+              </select>
+              on
+              <br>
+              <div class="checkbox">
+                <label for="team-form-digest-0" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-digest-0" />
+                  Mon
+                </label>
+                <label for="team-form-digest-1" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-digest-1" />
+                  Tue
+                </label>
+                <label for="team-form-digest-2" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-digest-2" />
+                  Wed
+                </label>
+                <label for="team-form-digest-3" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-digest-3" />
+                  Thu
+                </label>
+                <label for="team-form-digest-4" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-digest-4" />
+                  Fri
+                </label>
+                <label for="team-form-digest-5" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-digest-5" />
+                  Sat
+                </label>
+                <label for="team-form-digest-6" class="checkbox-inline">
+                  <input type="checkbox" id="team-form-digest-6" />
+                  Sun
+                </label>
+              </div><!-- /.checkbox -->
+              <div class="help-block">
+                We'll send a digest to your team of everyone's recent dones on
+                these days and at this time. The digest clues in everyone on your
+                team to what's getting done, without having to login.
+              </div><!-- /.help-block -->
+            </div><!-- /.form-group -->
+            <input type="submit" class="btn btn-primary disable-on-submit" value="Next ➞" />
+          </div><!-- /#team-form-frequencies -->
+        </form><!-- /#team-form -->
+      </div><!-- /#team-form-container -->
+    </div><!-- /.tab-content -->
+    
+  </div><!-- /.col-sm-6 col-sm-offset-3 -->
+</div><!-- /.row -->

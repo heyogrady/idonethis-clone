@@ -1,0 +1,92 @@
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <h1>Create Your Notch</h1>
+    <p class="lead">
+      Your account is set up! Now let's get your team up and running.
+    </p><!-- /.lead -->
+    <p>Do you want to create a Team or Personal Notch?</p>
+    <a href="#team-form-container" id="team-form-toggle" class="btn btn-primary" data-toggle="tab">Team</a>
+    <a href="#personal-form-container" id="personal-form-toggle" class="btn btn-primary active" data-toggle="tab">Personal</a>
+    <div class="help-block">
+      Team is for teams at work to track and share what they get done every day.<br>
+      Personal is for people who want to keep a private, individual log.
+    </div><!-- /.help-block -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="personal-form-container">
+        <%= simple_form_for @team, id: "personal-form" do |f| %>
+          <%= f.input :name, label: "Name", input_html: { class: "form-control" },
+                      hint: "Your calendar's name" %>
+          <%= f.input :question, input_html: { class: "form-control" },
+                      hint: "This is the question that we'll ask you to answer
+                            every day." %>
+          <%= f.hidden_field :is_personal, value: true %>
+          <div id="personal-form-frequencies">
+            <div class="form-group">
+              <label>We'll email you reminders</label>
+              at
+              <%= f.input :email_reminder_time, as: :select, label: false,
+                          collection: Team::TIMES, wrapper_class: "inline-block" %>
+              on
+              <br>
+              <%= f.input :days_to_send_reminder, as: :check_boxes, label: false,
+                          collection: Team::DAYS, item_wrapper_tag: false,
+                          item_label_class: "checkbox-inline" %>
+              <div class="help-block">
+                We'll remind your team to share what they got done on these days
+                and at this time. The reminder saves your team from having to
+                remember to update Notch.
+              </div><!-- /.help-block -->
+            </div><!-- /.form-group -->
+            <%= f.button :submit, "Save", class: "btn btn-primary disable-on-submit" %>
+          </div><!-- /#personal-form-frequencies -->
+        <% end %>
+      </div><!-- /#personal-form-container -->
+      <div class="tab-pane" id="team-form-container">
+        <%= simple_form_for @team, id: "team-form" do |f| %>
+          <%= f.input :name, label: "Team Name", input_html: { class: "form-control" },
+                      hint: "Your team name will appear in menus and headings." %>
+          <%= f.input :question, input_html: { class: "form-control" },
+                      hint: "This is the question that we'll ask your team to answer." %>
+          <div id="team-form-frequencies">
+            <div class="form-group">
+              <label>We'll email your team reminders</label>
+              at
+              <%= f.input :email_reminder_time, as: :select, label: false,
+                          collection: Team::TIMES, wrapper_class: "inline-block" %>
+              on
+              <br>
+              <%= f.input :days_to_send_reminder, as: :check_boxes, label: false,
+                          collection: Team::DAYS, item_wrapper_tag: false,
+                          item_label_class: "checkbox-inline" %>
+              <div class="help-block">
+                We'll remind your team to share what they got done on these days
+                and at this time. The reminder saves your team from having to
+                remember to update Notch.
+              </div><!-- /.help-block -->
+            </div><!-- /.form-group -->
+
+            <div class="form-group">
+              <label>We'll email your team digests</label>
+              at
+              <%= f.input :email_digest_time, as: :select, label: false,
+                          collection: Team::TIMES, wrapper_class: "inline-block" %>
+              on
+              <br>
+              <%= f.input :days_to_send_digest, as: :check_boxes, label: false,
+                          collection: Team::DAYS, item_wrapper_tag: false,
+                          item_label_class: "checkbox-inline"%>
+              <div class="help-block">
+                We'll send a digest to your team of everyone's recent dones on
+                these days and at this time. The digest clues in everyone on your
+                team to what's getting done, without having to login.
+              </div><!-- /.help-block -->
+            </div><!-- /.form-group -->
+
+            <%= f.button :submit, "Save", class: "btn btn-primary disable-on-submit" %>
+          </div><!-- /#team-form-frequencies -->
+        <% end %>
+      </div><!-- /#team-form-container -->
+    </div><!-- /.tab-content -->
+    
+  </div><!-- /.col-sm-6 col-sm-offset-3 -->
+</div><!-- /.row -->

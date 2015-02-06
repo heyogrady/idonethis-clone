@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Raw text:</strong>
+  <%= @notch.raw_text %>
+</p>
+
+<p>
+  <strong>Markedup text:</strong>
+  <%= @notch.markedup_text %>
+</p>
+
+<p>
+  <strong>Is goal:</strong>
+  <%= @notch.is_goal %>
+</p>
+
+<p>
+  <strong>Goal completed:</strong>
+  <%= @notch.goal_completed %>
+</p>
+
+<p>
+  <strong>Completed at:</strong>
+  <%= @notch.completed_at %>
+</p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @notch.team %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @notch.user %>
+</p>
+
+<%= link_to 'Edit', edit_notch_path(@notch) %> |
+<%= link_to 'Back', notches_path %>

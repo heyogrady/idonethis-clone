@@ -1,5 +1,7 @@
 NotchApp::Application.routes.draw do
 
+  resources :notches
+
   devise_for :users, controllers: { registrations: 'registrations' }
 
   # Authentication

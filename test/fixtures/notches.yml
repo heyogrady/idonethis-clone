@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  raw_text: MyString
+  markedup_text: MyText
+  is_goal: false
+  goal_completed: false
+  completed_at: 2015-02-05 21:13:19
+  team_id: 
+  user_id: 
+
+two:
+  raw_text: MyString
+  markedup_text: MyText
+  is_goal: false
+  goal_completed: false
+  completed_at: 2015-02-05 21:13:19
+  team_id: 
+  user_id: 

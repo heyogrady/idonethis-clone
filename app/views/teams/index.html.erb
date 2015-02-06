@@ -1,0 +1,83 @@
+<div class="row">
+  <div class="col-sm-3 col-md-2">
+    <div class="well">
+      <div class="row">
+        <div class="col-xs-4 col-sm-12">
+          <a href="#">
+            <img src="https://secure.gravatar.com/avatar/e44dabb1c4ff2fb8e68e0dc0706509f6?s=128&amp;d=monsterid" class="img-responsive">
+          </a>
+        </div><!-- /.col-xs-4 col-sm-12 -->
+        <div class="col-xs-8 col-sm-12">
+          <h5>Patrick O'Grady</h5>
+          <ul class="list-unstyled">
+            <li><%= link_to 'Add Team', new_team_path %></li>
+          </ul><!-- /.list-unstyled -->
+          <ul class="list-unstyled">
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Settings</a></li>
+            <li class="divider"></li><!-- /.divider -->
+          </ul><!-- /.list-unstyled -->
+          <form action="/search/" method="get" id="sidebar-search-form">
+            <input aria-describedby="addon-search" class="form-control hint" id="id_q" name="_hint_q" placeholder="Find dones ..." title="Find dones ..." type="search">
+          </form>
+        </div><!-- /.col-xs-8 col-sm-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.well -->
+  </div><!-- /.col-sm-3 col-md-2 -->
+  <div class="col-sm-5">
+    <div class="row">
+      <div class="col-xs-2 text-center">
+        <h2>
+          <i class="fa fa-user"></i>
+        </h2>
+      </div><!-- /.col-xs-2 text-center -->
+      <div class="col-xs-10">
+        <h2>Personal</h2>
+        <ul class="list-unstyled">
+          <% @teams.personal.each do |team| %>
+            <li>
+              <%= link_to(team.name, team) %>
+              <div class="pull-right">
+                <%= link_to settings_team_path(team), class: "team-settings-cog" do %>
+                  <i class="fa fa-cog"></i>
+                <% end %>
+              </div>
+            </li>
+          <% end %>
+        </ul><!-- /.list-unstyled -->
+        <p>
+          <%= link_to new_team_path, class: "btn btn-xs btn-primary" do %>
+            <i class="fa fa-plus"></i>
+            Add Personal
+          <% end %>
+        </p>
+      </div><!-- /.col-xs-10 -->
+      <div class="col-xs-2 text-center">
+        <h2>
+          <i class="fa fa-users"></i>
+        </h2>
+      </div><!-- /.col-xs-2 text-center -->
+      <div class="col-xs-10">
+        <h2>Team</h2>
+        <ul class="list-unstyled">
+          <% @teams.not_personal.each do |team| %>
+            <li>
+              <%= link_to(team.name, team) %>
+              <div class="pull-right">
+                <%= link_to settings_team_path(team), class: "team-settings-cog" do %>
+                  <i class="fa fa-cog"></i>
+                <% end %>
+              </div>
+            </li>
+          <% end %>
+        </ul><!-- /.list-unstyled -->
+        <p>
+          <%= link_to new_team_path, class: "btn btn-xs btn-primary" do %>
+            <i class="fa fa-plus"></i>
+            Add Team
+          <% end %>
+        </p>
+      </div><!-- /.col-xs-10 -->
+    </div><!-- /.row -->
+  </div><!-- /.col-sm-5 -->
+</div><!-- /.row -->

@@ -1,4 +1,4 @@
-Notch::Application.routes.draw do
+NotchApp::Application.routes.draw do
 
   devise_for :users, controllers: { registrations: 'registrations' }
 

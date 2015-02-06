@@ -24360,3 +24360,5 @@ ActionController::RoutingError (No route matches [GET] "/companies/sidekick/loca
 
   Rendered /Users/patrickogrady/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.text.erb (0.7ms)
   Rendered /Users/patrickogrady/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.text.erb (18.4ms)
+** [Honeybadger] Installing Thor integration
+** [Honeybadger] Installing Thor integration

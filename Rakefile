@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Notch::Application.load_tasks
+NotchApp::Application.load_tasks
